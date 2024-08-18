@@ -1,0 +1,4 @@
+# Replication settings
+replica:
+  enabled: true
+  replicas: 2
