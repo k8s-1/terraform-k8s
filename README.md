@@ -15,4 +15,12 @@
 kind create cluster --name=mycluster
 
 kubectl config view --context=kind-mycluster --raw --output="go-template-file=cluster.tfvars.gotemplate" > terraform.tfvars
+
+terraform init
+
+terraform apply
+
+kubectl port-forward svc/podinfo 8888:http
 ```
+* Note: do not to mix cluster creation and resource creation in terraform production
+* In this case, we have created the kindcluster manually and fetch the necessary values from the kubeconfig, go-templated into terraform.tfvars
