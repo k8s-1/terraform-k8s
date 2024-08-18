@@ -1,7 +1,7 @@
 # Example Repository on Terraforming Kubernetes Resources
 
 ## A word of caution
-* Avoid this, it's a box in a box (and there's better ways to go about it in a k8s-native way e.g. fluxcd, argocd)
+* It's a box in a box (and there's better ways to go about it in a k8s-native way e.g. fluxcd, argocd)
 * The only k8s resource you want to terraform is e.g. network CNI -> flux/argocd
 * Can be useful for the following timelined approach e.g.
     1. First, terraform basic infrastructure incl. controlplane e.g. kubernetes-ready VM's + controlplanes + CNI
