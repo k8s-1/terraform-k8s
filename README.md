@@ -23,7 +23,7 @@ terraform init
 
 terraform apply
 
-kubectl port-forward svc/podinfo 8888:http
+kubectl port-forward svc/podinfo 8888:http # visit localhost:8888 to view the podinfo stack in action
 ```
 * Note: do not to mix cluster creation and resource creation in terraform production
 * In this case, we have created the kindcluster manually and fetch the necessary values from the kubeconfig, go-templated into terraform.tfvars
