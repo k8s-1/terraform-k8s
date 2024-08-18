@@ -10,3 +10,9 @@
 * From there on, you've reached a point where any configuration is best done in a k8s-native way, not with terraform e.g. other infrastructure resources and k8s application config
 * Use kubernetes priorityClass to ensure appropriate scheduling in cluster, avoid creating confusing terraform code that bootstraps resources
 
+## Get started
+```
+kind create cluster --name=mycluster
+
+kubectl config view --context=kind-mycluster --raw --output="go-template-file=cluster.tfvars.gotemplate" > terraform.tfvars
+```
