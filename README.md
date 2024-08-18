@@ -11,7 +11,7 @@
 
 ## However...
 * It can be useful in niche cases
-* It can be useful for infrastructure resource management -> it keeps the infrastructure resources separate from application manifests
+* It can still be useful for infrastructure resource management, some people manage all their infrastructure resources this way
 
 ## Get started
 ```
