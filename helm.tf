@@ -11,18 +11,7 @@ resource "helm_release" "example" {
 
   # chart values can also be set with "set"
   set {
-    name  = "cluster.enabled"
-    value = "true"
-  }
-
-  set {
-    name  = "metrics.enabled"
-    value = "true"
-  }
-
-  set {
-    name  = "service.annotations.prometheus\\.io/port"
-    value = "9127"
-    type  = "string"
+    name  = "ui.color"
+    value = "#34577c"
   }
 }
