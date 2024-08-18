@@ -1,8 +1,8 @@
 resource "helm_release" "example" {
-  name       = "my-redis-release"
-  repository = "https://charts.bitnami.com/bitnami"
-  chart      = "redis"
-  version    = "6.0.1"
+  name       = "podinfo"
+  repository = "https://stefanprodan.github.io/podinfo"
+  chart      = "podinfo"
+  version    = "6.7.0"
 
   # import a values.yaml for our chart
   values = [
