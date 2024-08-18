@@ -22,6 +22,6 @@ resource "helm_release" "example" {
   # chart values can also be set with "set"
   set {
     name  = "ui.color"
-    value = "#34577c"
+    value = "#006400"
   }
 }
