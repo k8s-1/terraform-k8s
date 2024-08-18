@@ -4,7 +4,7 @@ resource "helm_release" "example" {
   chart      = "redis"
   version    = "6.0.1"
 
-  # we can import a values.yaml for our chart
+  # import a values.yaml for our chart
   values = [
     "${file("values.yaml")}"
   ]
