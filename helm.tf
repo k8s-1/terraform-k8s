@@ -4,23 +4,22 @@ resource "helm_release" "example" {
   chart      = "redis"
   version    = "6.0.1"
 
+  # we can import a values.yaml for our chart
   values = [
     "${file("values.yaml")}"
   ]
 
-  # setting chart value with "set"
+  # chart values can also be set with "set"
   set {
     name  = "cluster.enabled"
     value = "true"
   }
 
-  # setting chart value with "set"
   set {
     name  = "metrics.enabled"
     value = "true"
   }
 
-  # setting chart value with "set"
   set {
     name  = "service.annotations.prometheus\\.io/port"
     value = "9127"
