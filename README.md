@@ -9,8 +9,8 @@
 * From there on, you've reached a point where any configuration is best done in a k8s-native way, not with terraform e.g. other infrastructure resources and k8s application config
 * Use kubernetes priorityClass to ensure appropriate scheduling in cluster, avoid creating confusing terraform code that configures kubernetes resources unless really necessary
 
-## However...
-* It can be useful in niche cases
+## The bright side...
+* It can still be useful in niche cases
 * It can still be useful for infrastructure resource management, some people manage all their infrastructure resources this way
 
 ## Get started
