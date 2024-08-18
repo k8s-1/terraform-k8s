@@ -7,7 +7,7 @@
     1. First, terraform basic infrastructure incl. controlplane e.g. VM's + controlplanes + CNI
     2. Next, terraform flux/argocd
 * From there on, you've reached a point where any configuration is best done in a k8s-native way, not with terraform e.g. other infrastructure resources and k8s application config
-* Use kubernetes priorityClass to ensure appropriate scheduling in cluster, avoid creating confusing terraform code that bootstraps resources
+* Use kubernetes priorityClass to ensure appropriate scheduling in cluster, avoid creating confusing terraform code that configures kubernetes resources unless really necessary
 
 ## Get started
 ```
